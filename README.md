@@ -54,13 +54,19 @@ All code is running under Google Colab GPU.
 
 ## Adversarial Examples:
 
-Here's a clean image example (`../img/clean_img.png`).
+Here's a clean image example (`../img/clean_img.png`). The original label is **benign**.
 
 ![clean img](./img/clean_img.png)
 
-Here's an adversarial image example (`../img/BUSI_resnet50_PGD.png`). It is an adversarial image by using PGD on ResNet50.
+Here's an adversarial image example (`../img/BUSI_resnet50_PGD.png`). It is an adversarial image by using PGD on ResNet50. The label after attack is **malignant**. The perturbation of image is obvious.
 
 ![clean img](./img/BUSI_resnet50_PGD.png)
+
+Here's an adversarial image example (`../img/BUSI_LR_PGD.png`). It is an adversarial image by using PGD on Logistic Regression. The label after attack is **malignant**. The adversarial image is blurred.
+
+![clean img](./img/BUSI_LR_PGD.png)
+
+For other adversarial images, please check `../img` folder, I names all images as *DatasetName_ModelName_AttackName.png*.
 
 ## Related Paper
 
