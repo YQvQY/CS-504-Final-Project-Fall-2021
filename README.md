@@ -54,9 +54,9 @@ All code is running under Google Colab GPU.
 
 ## Adversarial Examples:
 
-Here's a clean image example (`../img/clean img.png`).
+Here's a clean image example (`../img/clean_img.png`).
 
-![clean img](./img/clean img.png)
+![clean img](./img/clean_img.png)
 
 Here's an adversarial image example (`../img/BUSI_resnet50_PGD.png`). It is an adversarial image by using PGD on ResNet50.
 
