@@ -68,7 +68,7 @@ Here's an adversarial image example (`../img/BUSI_resnet50_PGD.png`). It is an a
 
 ![clean img](./img/BUSI_resnet50_PGD.png)
 
-Transfer 120 adversarial aside images from ResNet50 to other Models
+Transfer 120 PGD adversarial aside images from ResNet50 to other Models
 
 | Model | ResNet50 | K-nearest neighbors | Decision tree | Logistic regression | SVM    | Naive Bayes | Bagging classifier | Random forest | Extra trees | Gradient boosting | MobileNet |
 | ----- | -------- | ------------------- | ------------- | ------------------- | ------ | ----------- | ------------------ | ------------- | ----------- | ----------------- | --------- |
@@ -78,7 +78,7 @@ Here's an adversarial image example (`../img/BUSI_LR_PGD.png`). It is an adversa
 
 ![clean img](./img/BUSI_LR_PGD.png)
 
-Transfer 120 adversarial aside images from Logistic Regression to other Models
+Transfer 120 PGD adversarial aside images from Logistic Regression to other Models
 
 | Model | Logistic regression | K-nearest neighbors | Decision tree | SVM    | Naive Bayes | Bagging classifier | Random forest | Extra trees | Gradient boosting | ResNet50 | MobileNet |
 | ----- | ------------------- | ------------------- | ------------- | ------ | ----------- | ------------------ | ------------- | ----------- | ----------------- | -------- | --------- |
