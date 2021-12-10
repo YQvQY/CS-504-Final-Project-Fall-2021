@@ -58,15 +58,35 @@ Here's a clean image example (`../img/clean_img.png`). The original label is **b
 
 ![clean img](./img/clean_img.png)
 
+120 clean aside images classification results:
+
+| Model | ResNet50 | K-nearest neighbors | Decision tree | Logistic regression | SVM    | Naive Bayes | Bagging classifier | Random forest | Extra trees | Gradient boosting | MobileNet |
+| ----- | -------- | ------------------- | ------------- | ------------------- | ------ | ----------- | ------------------ | ------------- | ----------- | ----------------- | --------- |
+| Acc   | 85%      | 54.17%              | 52.5%         | 61.67%              | 60.83% | 46.67%      | 60%                | 57.5%         | 66.67%      | 61.67%            | 84.17%    |
+
 Here's an adversarial image example (`../img/BUSI_resnet50_PGD.png`). It is an adversarial image by using PGD on ResNet50. The label after attack is **malignant**. The perturbation of image is obvious.
 
 ![clean img](./img/BUSI_resnet50_PGD.png)
+
+Transfer 120 adversarial aside images from ResNet50 to other Models
+
+| Model | ResNet50 | K-nearest neighbors | Decision tree | Logistic regression | SVM    | Naive Bayes | Bagging classifier | Random forest | Extra trees | Gradient boosting | MobileNet |
+| ----- | -------- | ------------------- | ------------- | ------------------- | ------ | ----------- | ------------------ | ------------- | ----------- | ----------------- | --------- |
+| Acc   | 9.17%    | 53.33%              | 48.33%        | 62.5%               | 58.33% | 39.17%      | 58.33%             | 58.33%        | 60%         | 57.5%             | 50.83%    |
 
 Here's an adversarial image example (`../img/BUSI_LR_PGD.png`). It is an adversarial image by using PGD on Logistic Regression. The label after attack is **malignant**. The adversarial image is blurred.
 
 ![clean img](./img/BUSI_LR_PGD.png)
 
+Transfer 120 adversarial aside images from Logistic Regression to other Models
+
+| Model | Logistic regression | K-nearest neighbors | Decision tree | SVM    | Naive Bayes | Bagging classifier | Random forest | Extra trees | Gradient boosting | ResNet50 | MobileNet |
+| ----- | ------------------- | ------------------- | ------------- | ------ | ----------- | ------------------ | ------------- | ----------- | ----------------- | -------- | --------- |
+| Acc   | 26.67%              | 50%                 | 35%           | 46.67% | 36.67%      | 46.67%             | 52.5%         | 52.5%       | 31.67%            | 60.83%   | 60%       |
+
 For other adversarial images, please check `../img` folder, I names all images as *DatasetName_ModelName_AttackName.png*.
+
+
 
 ## Related Paper
 
